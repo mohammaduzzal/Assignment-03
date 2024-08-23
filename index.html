@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- tailwind and daisy ui --> 
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- extended cdn -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: 'rgb(171, 239, 95)',
+            secondary: 'rgb(33, 33, 33)',
+            body: 'rgb(244, 244, 244)',
+            accent: 'rgb(73, 73, 73)',
+            body_neutral: 'rgb(115, 115, 115)',
+            third: 'rgb(28, 28, 28)',
+           
+          },
+          fontFamily: {
+            manrope: 'Manrope',
+          },
+          backgroundImage: {
+            paper:"url('./assets/bg.jpg')",
+           
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-manrope">
+    <!-- header section -->
+     <header style="background-image: linear-gradient(0deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);">
+        <!-- nav-bar -->
+         <nav class="lg:w-11/12 mx-auto p-4 lg:p-2">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start flex items-center justify-start gap-2">
+                    <i class="fa-solid fa-arrow-right bg-primary text-white -rotate-45  rounded-full p-2 lg:p-4"></i>
+                  <a class=" text-4xl lg:text-5xl font-bold">Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-lg font-medium gap-2">
+                    <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Home</a></li>
+                    <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Services</a></li>
+                    <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Portfolio</a></li>
+                    <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Blogs</a></li>
+                    <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Contact Us</a></li>
+                   
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="hidden lg:block">
+                        <div class=" flex items-center justify-center gap-5">
+                        <div class="text-2xl">
+                            <i class="fa-solid fa-magnifying-glass p-3 bg-slate-200 rounded-full"></i>
+                            <i class="fa-solid fa-cart-shopping p-3 bg-slate-200 rounded-full"></i>
+                        </div>
+                        <div>
+                            <a class="btn bg-primary text-third text-lg font-extrabold ">Book Consult  <i class="fa-solid fa-arrow-right bg-third text-white -rotate-45  rounded-full p-2"></i></a>
+                        </div>
+                    </div>
+                       
+                    </div>
+                  
+
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg font-medium gap-2 right-0">
+                        <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Home</a></li>
+                        <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Services</a></li>
+                        <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Portfolio</a></li>
+                        <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Blogs</a></li>
+                        <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+         </nav>
+
+         <!-- banner section -->
+          <section>
+            <div class="w-11/12 mx-auto flex items-center flex-col  py-10">
+                <!-- image -->
+                 <div class="flex-1 mb-5">
+                    <img src="./assets/banner.png" alt="">
+                 </div>
+                <!-- text -->
+                 <div class="text-center space-y-5 flex-1">
+                    <h1 class="text-3xl lg:text-6xl font-black text-secondary leading-tight">A barn house of this design has a <br> striking appearance</h1>
+                    <p class="text-accent font-medium">We build your dreams through our ideas.Good design for good home.Let us be the part of your dreams.</p>
+                    <div>
+                        <a class="btn bg-lime-300 text-third text-lg font-bold rounded-xl">View Details<i class="fa-solid fa-arrow-right bg-lime-500 -rotate-45  rounded-full p-2"></i></a>
+                    </div>
+                 </div>
+            </div>
+          </section>
+       
+
+     </header>
+
+
+
+
+    <!-- main section -->
+     <main></main>
+    <!-- footer section -->
+     <footer></footer>
+    
+</body>
+</html>

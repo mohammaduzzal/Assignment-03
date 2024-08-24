@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-3</title>
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <!-- tailwind and daisy ui --> 
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- extended cdn -->
-<script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-3</title>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- tailwind and daisy ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- extended cdn -->
+  <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -25,213 +28,315 @@
             accent: 'rgb(73, 73, 73)',
             body_neutral: 'rgb(115, 115, 115)',
             third: 'rgb(28, 28, 28)',
-           
+
           },
           fontFamily: {
             manrope: 'Manrope',
           },
           backgroundImage: {
-            paper:"url('./assets/bg.jpg')",
-           
+            paper: "url('./assets/bg.jpg')",
+
           },
         }
       }
     }
   </script>
 </head>
+
 <body class="font-manrope">
-    <!-- header section -->
-     <header class="bg-gradient-to-b from-gray-50 to-white">
-        <!-- nav-bar -->
-         <nav class="lg:w-11/12 mx-auto p-4 lg:p-2">
-            <div class="navbar bg-base-100">
-                <div class="navbar-start flex items-center justify-start gap-2">
-                    <i class="fa-solid fa-arrow-right bg-primary text-white -rotate-45  rounded-full p-2 lg:p-4"></i>
-                  <a class=" text-4xl lg:text-5xl font-bold">Rinterio</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1 text-lg font-medium gap-2">
-                    <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Home</a></li>
-                    <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Services</a></li>
-                    <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Portfolio</a></li>
-                    <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Blogs</a></li>
-                    <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Contact Us</a></li>
-                   
-                  </ul>
-                </div>
-                <div class="navbar-end">
-                    <div class="hidden lg:block">
-                        <div class=" flex items-center justify-center gap-5">
-                        <div class="text-2xl">
-                            <i class="fa-solid fa-magnifying-glass p-3 bg-slate-200 rounded-full"></i>
-                            <i class="fa-solid fa-cart-shopping p-3 bg-slate-200 rounded-full"></i>
-                        </div>
-                        <div>
-                            <a class="btn bg-primary text-third text-lg font-extrabold ">Book Consult  <i class="fa-solid fa-arrow-right bg-third text-white -rotate-45  rounded-full p-2"></i></a>
-                        </div>
-                    </div>
-                       
-                    </div>
-                  
+  <!-- header section -->
+  <header class="bg-gradient-to-b from-gray-50 to-white">
+    <!-- nav-bar -->
+    <nav class="w-full lg:w-11/12 mx-auto p-4 lg:p-2">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start flex items-center justify-start gap-2">
+          <i class="fa-solid fa-arrow-right bg-primary text-white -rotate-45  rounded-full p-2 lg:p-4"></i>
+          <a class=" text-4xl lg:text-5xl font-bold">Rinterio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-lg font-medium gap-2">
+            <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Home</a></li>
+            <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Services</a>
+            </li>
+            <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Portfolio</a>
+            </li>
+            <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Blogs</a></li>
+            <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Contact Us</a>
+            </li>
 
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class=" lg:hidden">
-                        <i class="fa-solid fa-bars bg-slate-300 rounded-full p-3"></i>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg font-medium gap-2 right-0">
-                        <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Home</a></li>
-                        <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Services</a></li>
-                        <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Portfolio</a></li>
-                        <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Blogs</a></li>
-                        <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Contact Us</a></li>
-                    </ul>
-                  </div>
-                </div>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="hidden lg:block">
+            <div class=" flex items-center justify-center gap-5">
+              <div class="text-2xl">
+                <i class="fa-solid fa-magnifying-glass p-3 bg-slate-200 rounded-full"></i>
+                <i class="fa-solid fa-cart-shopping p-3 bg-slate-200 rounded-full"></i>
               </div>
-         </nav>
-
-         <!-- banner section -->
-          <section>
-            <div class="w-11/12 mx-auto flex items-center flex-col  py-10">
-                <!-- image -->
-                 <div class="flex-1 mb-5">
-                    <img src="./assets/banner.png" alt="">
-                 </div>
-                <!-- text -->
-                 <div class="text-center space-y-5 flex-1">
-                    <h1 class="text-3xl lg:text-6xl font-black text-secondary leading-tight">A barn house of this design has a <br> striking appearance</h1>
-                    <p class="text-accent font-medium">We build your dreams through our ideas.Good design for good home.Let us be the part of your dreams.</p>
-                    <div>
-                        <a class="btn bg-lime-300 text-third text-lg font-bold rounded-xl">View Details<i class="fa-solid fa-arrow-right bg-lime-500 -rotate-45  rounded-full p-2"></i></a>
-                    </div>
-                 </div>
+              <div>
+                <a class="btn bg-primary text-third text-lg font-extrabold ">Book Consult <i
+                    class="fa-solid fa-arrow-right bg-third text-white -rotate-45  rounded-full p-2"></i></a>
+              </div>
             </div>
-          </section>
-       
 
-     </header>
-
-
-
-
-    <!-- main section -->
-     <main>
-      <!-- about section -->
-       <section class="bg-body">
-        <div class="w-9/12 mx-auto">
-          <div class="flex flex-col  gap-2 my-10 w-[70%] lg:w-[15%]">
-            <img class="w-20 hidden lg:block" src="./assets/Vector.png" alt="">
-            <p class="text-accent  font-medium bg-white rounded-xl p-2 text-center mt-5"> <i class="fa-solid fa-arrow-right text-xl mr-2"></i>About us</p>
           </div>
-          <!-- container -->
-           <div class="flex flex-col lg:flex-row gap-10">
-            <!-- text -->
-             <div class="flex-1">
-             
-              <h3 class="text-4xl font-black leading-tight text-secondary mb-5 text-center lg:text-left">We design thoughtful, liveable spaces</h3>
-              <p class="text-accent font-medium mb-5 text-center lg:text-left">At Rinterio, we specialize in creating innovative and sustainable building designs that blend functionality with aesthetic appeal.</p>
-              <div class="space-y-6 mb-5">
-                <div class="flex items-center justify-start bg-white lg:w-[80%] rounded-xl gap-5 p-2">
-                  <img src="./assets/commercial.png" alt="">
-                 <p class="text-body_neutral font-medium">With years of experience in architectural design and planning, our team is committed to turning your vision into reality.</p>
-                </div>
-                <div class="flex items-center justify-start bg-white lg:w-[80%] rounded-xl gap-5 p-2">
-                  <img src="./assets/residential.png" alt="">
-                 <p class="text-body_neutral font-medium">We work closely with clients to ensure that every project meets the highest standards of quality, safely, and efficiency.</p>
-                </div>
+
+
+          <div class="dropdown">
+            <div tabindex="0" role="button" class=" lg:hidden">
+              <i class="fa-solid fa-bars bg-slate-300 rounded-full p-3"></i>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg font-medium gap-2 right-0">
+              <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Home</a>
+              </li>
+              <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Services</a>
+              </li>
+              <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out">
+                <a>Portfolio</a></li>
+              <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Blogs</a>
+              </li>
+              <li class="text-body_neutral hover:text-accent transition-colors duration-300 ease-in-out"><a>Contact
+                  Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner section -->
+    <section>
+      <div class="w-full lg:w-11/12 mx-auto flex items-center flex-col py-5 lg:py-10">
+        <!-- image -->
+        <div class="mb-5">
+          <img class="w-full" src="./assets/banner.png" alt="">
+        </div>
+        <!-- text -->
+        <div class="text-center space-y-5 w-full lg:w-2/3">
+          <h1 class="text-3xl lg:text-6xl font-black text-secondary leading-tight">A barn house of this design has a
+            <br> striking appearance</h1>
+          <p class="text-accent font-medium">We build your dreams through our ideas.Good design for good home.Let us be
+            the part of your dreams.</p>
+          <div>
+            <a class="btn bg-lime-300 text-third text-lg font-bold rounded-xl">View Details<i
+                class="fa-solid fa-arrow-right bg-lime-500 -rotate-45  rounded-full p-2"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </header>
+
+
+
+
+  <!-- main section -->
+  <main>
+    <!-- about section -->
+    <section class="bg-body">
+      <div class="w-9/12 mx-auto">
+        <div class="flex flex-col  gap-2 my-10 w-[70%] lg:w-[15%]">
+          <img class="w-20 hidden lg:block" src="./assets/Vector.png" alt="">
+          <p class="text-accent  font-medium bg-white rounded-xl p-2 text-center mt-5"> <i
+              class="fa-solid fa-arrow-right text-xl mr-2"></i>About us</p>
+        </div>
+        <!-- container -->
+        <div class="flex flex-col lg:flex-row gap-10">
+          <!-- text -->
+          <div class="flex-1">
+
+            <h3 class="text-4xl font-black leading-tight text-secondary mb-5 text-center lg:text-left">We design
+              thoughtful, liveable spaces</h3>
+            <p class="text-accent font-medium mb-5 text-center lg:text-left">At Rinterio, we specialize in creating
+              innovative and sustainable building designs that blend functionality with aesthetic appeal.</p>
+            <div class="space-y-6 mb-5">
+              <div class="flex items-center justify-start bg-white lg:w-[80%] rounded-xl gap-5 p-2">
+                <img src="./assets/commercial.png" alt="">
+                <p class="text-body_neutral font-medium">With years of experience in architectural design and planning,
+                  our team is committed to turning your vision into reality.</p>
               </div>
-             
-             </div>
-            <!-- img -->
-             <div class="flex-1">
-              <img class="border-4 border-dashed" src="./assets/Rectangle.png" alt="">
-             </div>
-           </div>
+              <div class="flex items-center justify-start bg-white lg:w-[80%] rounded-xl gap-5 p-2">
+                <img src="./assets/residential.png" alt="">
+                <p class="text-body_neutral font-medium">We work closely with clients to ensure that every project meets
+                  the highest standards of quality, safely, and efficiency.</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- img -->
+          <div class="flex-1">
+            <img class="border-4 border-dashed" src="./assets/Rectangle.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- work section -->
+    <section class="bg-body mb-20">
+      <div class="w-11/12 mx-auto ">
+        <div class="flex flex-col justify-center items-center gap-3 p-10">
+          <h5 class="text-accent font-bold bg-white w-[70%] lg:w-[15%] rounded-xl text-center"><i
+              class="fa-solid fa-arrow-right"></i> How we work</h5>
+          <h3 class="text-4xl font-black leading-tight text-secondary mb-5 text-center">Our Works Process</h3>
+          <p class="text-accent font-medium mb-5 text-center">
+            At Rinterio, we believe that every successful project starts with a clear and organized work process. Our
+            streamlined approach ensures that each phase of construction design is handled with precision and care,
+            delivering high-quality results that exceed expectations.
+          </p>
+        </div>
+
+        <!-- container -->
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 px-10 py-5">
+          <!-- card-1 -->
+          <div class="flex justify-center items-start flex-col bg-pink-200 rounded-xl p-10">
+            <figure>
+              <img src="./assets/concept.png" alt="" />
+            </figure>
+            <div>
+              <h2 class="card-title text-xl font-extrabold text-third">Concept</h2>
+              <p class="text-accent font-medium"> We begin by meeting with you to understand your vision, requirements,
+                and goals and designers then conceptualizes initial designs based on your input.
+              </p>
+
+            </div>
+          </div>
+          <!-- card-2 -->
+          <div class="flex justify-center items-start flex-col bg-yellow-200 rounded-xl p-10">
+            <figure>
+              <img src="./assets/flow-chart.png" alt="" />
+            </figure>
+            <div>
+              <h2 class="card-title text-xl font-extrabold text-third">Design Process</h2>
+              <p class="text-accent font-medium"> Our design process combines creativity with precision, ensuring that
+                every detail reflects your vision. From initial concepts to final blueprints, we work collaboratively to
+                deliver innovative and functional designs.
+              </p>
+
+            </div>
+          </div>
+          <!-- card-3 -->
+          <div class="flex justify-center items-start flex-col bg-green-300 rounded-xl p-10">
+            <figure>
+              <img src="./assets/vision.png" alt="" />
+            </figure>
+            <div>
+              <h2 class="card-title text-xl font-extrabold text-third">Supervision</h2>
+              <p class="text-accent font-medium">Our expert supervision ensures every stage of construction is executed
+                to the highest standards. We monitor progress closely, ensuring that timelines, safety, and quality are
+                maintained throughout the project.
+              </p>
+
+            </div>
+          </div>
+          <!-- card-4 -->
+          <div class="flex justify-center items-start flex-col bg-sky-200 rounded-xl p-10">
+            <figure>
+              <img src="./assets/budget-planning.png" alt="" />
+            </figure>
+            <div>
+              <h2 class="card-title text-xl font-extrabold text-third">Budget Planning</h2>
+              <p class="text-accent font-medium"> Our budget planning process ensures that your project stays on track
+                financially without compromising on quality. We provide transparent cost estimates and work closely with
+                you to balance design aspirations with your budget.
+              </p>
+
+            </div>
+          </div>
 
         </div>
-       </section>
+      </div>
+    </section>
 
-       <!-- work section -->
-        <section class="bg-body mb-20">
-          <div class="w-11/12 mx-auto py-5 text-center ">
-            <div class="flex flex-col justify-center items-center gap-3 p-10">
-            <h5 class="text-accent font-bold bg-white w-[70%] lg:w-[15%] rounded-xl text-center"><i class="fa-solid fa-arrow-right"></i> How we works</h5>
-            <h3 class="text-4xl font-black leading-tight text-secondary mb-5 text-center">Our Works Process</h3>
-            <p class="text-accent font-medium mb-5 text-center">
-              At Rinterio, we believe that every successful project starts with a clear and organized work process. Our streamlined approach ensures that each phase of construction design is handled with precision and care, delivering high-quality results that exceed expectations.
+    <!-- portfolio section -->
+    <section class="my-20">
+      <div class="w-full lg:w-11/12 mx-auto">
+        <div class="flex flex-col justify-center items-center gap-3 p-5 lg:p-10">
+          <h5 class="text-accent font-bold bg-slate-300  lg:w-[30%] rounded-xl text-center"><i
+              class="fa-solid fa-arrow-right"></i> Explore our Latest works</h5>
+          <h3 class="text-2xl lg:text-4xl font-black leading-tight text-secondary mb-5 text-center">Our Latest Portfolio
+          </h3>
+          <p class="text-accent font-medium  text-center">
+            Explore our portfolio to see a diverse range of completed projects, showcasing our commitment to innovation
+            and quality. Each project reflects our dedication to delivering exceptional design and construction
+            solutions tailored to our clients' needs.
           </p>
-          </div>
-          </div>
-          <!-- container -->
-           <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 px-10 py-5">
-            <!-- card-1 -->
-            <div class="flex justify-center items-start flex-col bg-pink-200 rounded-xl p-10">
-              <figure>
-                <img
-                  src="./assets/concept.png"
-                  alt="" />
-              </figure>
-              <div>
-                <h2 class="card-title text-xl font-extrabold text-third">Concept</h2>
-                <p class="text-accent font-medium">  We begin by meeting with you to understand your vision, requirements, and goals and designers then conceptualizes initial designs based on your input.
-                </p>
-                
-              </div>
-            </div>
-            <!-- card-2 -->
-            <div class="flex justify-center items-start flex-col bg-yellow-200 rounded-xl p-10">
-              <figure>
-                <img
-                  src="./assets/flow-chart.png"
-                  alt="" />
-              </figure>
-              <div>
-                <h2 class="card-title text-xl font-extrabold text-third">Design Process</h2>
-                <p class="text-accent font-medium">     Our design process combines creativity with precision, ensuring that every detail reflects your vision. From initial concepts to final blueprints, we work collaboratively to deliver innovative and functional designs.
-                </p>
-                
-              </div>
-            </div>
-            <!-- card-3 -->
-            <div class="flex justify-center items-start flex-col bg-green-300 rounded-xl p-10">
-              <figure>
-                <img
-                  src="./assets/vision.png"
-                  alt="" />
-              </figure>
-              <div>
-                <h2 class="card-title text-xl font-extrabold text-third">Supervision</h2>
-                <p class="text-accent font-medium">Our expert supervision ensures every stage of construction is executed to the highest standards. We monitor progress closely, ensuring that timelines, safety, and quality are maintained throughout the project.
-                </p>
-                
-              </div>
-            </div>
-            <!-- card-4 -->
-            <div class="flex justify-center items-start flex-col bg-sky-200 rounded-xl p-10">
-              <figure>
-                <img
-                  src="./assets/budget-planning.png"
-                  alt="" />
-              </figure>
-              <div>
-                <h2 class="card-title text-xl font-extrabold text-third">Budget Planning</h2>
-                <p class="text-accent font-medium">  Our budget planning process ensures that your project stays on track financially without compromising on quality. We provide transparent cost estimates and work closely with you to balance design aspirations with your budget.
-                </p>
-                
-              </div>
-            </div>
-            
-           </div>
-        </section>
-
-
-     </main>
-
-
-    <!-- footer section -->
-     <footer></footer>
+        </div>
     
+    
+        <!-- grid therapy -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div class=" bg-white col-span-1 lg:col-span-3 shadow-xl rounded-xl ">
+            <div class="flex flex-col lg:flex-row items-start lg:items-center p-3 space-y-3">
+              <!-- img -->
+              <div class="bg-white rounded-xl p-3">
+                <img class="w-full border-2 border-dashed" src="./assets/img1.png" alt="">
+              </div>
+              <!-- text -->
+              <div class="flex-1 space-y-3">
+                <h3 class="text-accent text-2xl font-extrabold">Commercial</h3>
+                <p class="text-body_neutral text-sm font-base"> We deliver innovative and efficient commercial designs that
+                  elevate business spaces to new levels of functionality and style.</p>
+                <div>
+                  <a class="btn bg-white text-third text-lg font-bold rounded-xl">View Details<i
+                      class="fa-solid fa-arrow-right bg-lime-500 -rotate-45  rounded-full p-2"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+    
+    
+          <div class=" bg-white shadow-xl rounded-xl p-3">
+            <img class="border-2 border-dashed w-full" src="./assets/img2.png" alt="">
+          </div>
+          <div class=" bg-white shadow-xl rounded-xl  p-3">
+            <img class="border-2 border-dashed w-full" src="./assets/img3.png" alt="">
+          </div>
+    
+          <div class=" bg-white col-span-1 lg:col-span-2 shadow-xl rounded-xl ">
+            <div class="flex flex-col lg:flex-row items-start lg:items-center p-2 space-y-3 lg:space-y-0 gap-3">
+              <!-- img -->
+              <div>
+                <img class="border-2 border-dashed w-full" src="./assets/img4.png" alt="">
+              </div>
+              <!-- text -->
+              <div class="flex-1">
+                <h3 class="text-accent text-2xl font-extrabold">Commercial</h3>
+                <p class="text-body_neutral text-sm font-base"> We deliver innovative and efficient commercial designs that
+                  elevate business spaces to new levels of functionality and style.</p>
+                <div>
+                  <a class="btn bg-white text-third text-lg font-bold rounded-xl ">View Details<i
+                      class="fa-solid fa-arrow-right bg-lime-500 -rotate-45  rounded-full p-2"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="bg-white shadow-xl rounded-xl p-3">
+            <img class="border-2 border-dashed w-full" src="./assets/img5.png" alt="">
+          </div>
+          <div class="bg-white shadow-xl rounded-xl  lg:ml-5 p-3 block lg:hidden">
+            <img class="border-2 border-dashed w-full" src="./assets/img3.png" alt="">
+          </div>
+    
+        </div>
+    
+    
+    
+      </div>
+    
+    </section>
+
+
+
+  </main>
+
+
+  <!-- footer section -->
+  <footer></footer>
+
 </body>
+
 </html>
